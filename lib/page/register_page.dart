@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 import '../components/my_button.dart';
 import '../components/my_textfield.dart';
@@ -27,13 +28,19 @@ class _RegisterPageState extends State<RegisterPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             //logo
-            Icon(
-              Icons.lock_open_rounded,
-              size: 100,
-              color: Theme.of(context).colorScheme.inversePrimary,
+            Lottie.network(
+              'https://lottie.host/26e4b406-8c95-4282-8c6e-7b26df9138d2/FVqTYE20iM.json',
+              width: 200,
+              height: 200,
             ),
+            //logo
+            // Icon(
+            //   Icons.lock_open_rounded,
+            //   size: 100,
+            //   color: Theme.of(context).colorScheme.inversePrimary,
+            // ),
             SizedBox(
-              height: 25,
+              height: 15,
             ),
             //message, ap slogan
             Text(
